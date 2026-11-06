@@ -3,4 +3,4 @@
 ### 2024 - 1003975 
 ### INF241 
 
-Laboratory 0: Discussion 
+Laboratory 0: Lorem ipsum
