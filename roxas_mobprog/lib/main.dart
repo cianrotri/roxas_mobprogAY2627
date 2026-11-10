@@ -9,7 +9,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         body: Center(
           child: Column(
@@ -20,7 +20,23 @@ class MainApp extends StatelessWidget {
               SizedBox(height: 10),
               Text('GG Freaking EZ'),
               Text('HEY! Dont Say That!'),
-              Text('Really? Freakin EZ'),
+              Text('Really? Freakin NOOOOOOOOOOOOOO'),
+
+              SizedBox(height: 20),
+
+              Container(
+                width: 200,
+                height: 100,
+                padding: EdgeInsets.all(16),
+                color: Color.fromARGB(255, 43, 112, 177),
+                child: Center(
+                  child: Text(
+                    'Anastasya Will Come Home !!',
+                    style: TextStyle(color: Colors.white),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
