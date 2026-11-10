@@ -12,7 +12,17 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!, Grace Roxas present ! stan straykids !'),
+          child: Column(
+            mainAxisAlignment:
+                MainAxisAlignment.center, // Centers the column vertically
+            children: [
+              Text('Hello World!, Grace Roxas present !'),
+              SizedBox(height: 10),
+              Text('GG Freaking EZ'),
+              Text('HEY! Dont Say That!'),
+              Text('Really? Freakin EZ'),
+            ],
+          ),
         ),
       ),
     );
