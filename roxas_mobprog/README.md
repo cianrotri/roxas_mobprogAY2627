@@ -12,6 +12,5 @@ again would work and fortunately it did. For flutter itself, the challenge I enc
 understanding it's syntax in comparison with languages I'm familiar with like xml, html, css, typescript.
 I believe it will take some time to grasp but would definitely be fun. 
 
-
-
+Laboratory 1: 
 
