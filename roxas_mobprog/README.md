@@ -15,7 +15,7 @@ I believe it will take some time to grasp but would definitely be fun.
 Laboratory 1: I foudn it interesting how easily customizeable flutter is, I can create a reausable 
 card with conditions and built in and customizeable depending on what it's function is and if the condition exists. 
 I'm still struggling with understanding it's structure, from our activity I could see how quickly it can 
-get intertwined but I grasped where things go for the most part. This was enjoyable :DD! 
+get intertwined but I grasped where things go for the most part. Overall I integrated the images by giving them properties to fill in, for the post image i created the variable imagePath which if true the homescreen sends the image path for it to be displayed, and the same process for the user pfps which I used an avatarPath representing the avatar icon and have the newsfeed_card style what image goes automatically. I created a static variable currentUserAvatar that doesn't change because it represents the person logged in. As for the like button that can be toggled, I changed the template to a StatefulWidget so it can remember being clicked and put the display function under the like text button.
 
 
 
