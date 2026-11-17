@@ -12,5 +12,10 @@ again would work and fortunately it did. For flutter itself, the challenge I enc
 understanding it's syntax in comparison with languages I'm familiar with like xml, html, css, typescript.
 I believe it will take some time to grasp but would definitely be fun. 
 
-Laboratory 1: 
+Laboratory 1: I foudn it interesting how easily customizeable flutter is, I can create a reausable 
+card with conditions and built in and customizeable depending on what it's function is and if the condition exists. 
+I'm still struggling with understanding it's structure, from our activity I could see how quickly it can 
+get intertwined but I grasped where things go for the most part. This was enjoyable :DD! 
+
+
 
