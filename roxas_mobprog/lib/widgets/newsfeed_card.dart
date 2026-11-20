@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../constants.dart';
 import 'custom_text.dart';
 
-class NewsFeedCard extends StatefulWidget {
+class NewsFeedCard extends StatelessWidget {
   final String userName;
   final String postContent;
   final String date;
@@ -25,14 +25,6 @@ class NewsFeedCard extends StatefulWidget {
   });
 
   @override
-  State<NewsFeedCard> createState() => _NewsFeedCardState();
-}
-
-class _NewsFeedCardState extends State<NewsFeedCard> {
-  bool isLiked = false;
-
-
-  @override
   Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.all(ScreenUtil().setSp(10)),
@@ -46,10 +38,10 @@ class _NewsFeedCardState extends State<NewsFeedCard> {
               children: [
                 CircleAvatar(
                   radius: ScreenUtil().setSp(20),
-                  backgroundImage: widget.avatarPath != null
-                      ? AssetImage(widget.avatarPath!)
+                  backgroundImage: avatarPath != null
+                      ? AssetImage(avatarPath!)
                       : null,
-                  child: widget.avatarPath == null
+                  child: avatarPath == null
                       ? const Icon(Icons.person)
                       : null,
                 ), // for the icons
@@ -60,7 +52,7 @@ class _NewsFeedCardState extends State<NewsFeedCard> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     CustomText(
-                      text: widget.userName,
+                      text: userName,
                       fontSize: ScreenUtil().setSp(15),
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
@@ -70,7 +62,7 @@ class _NewsFeedCardState extends State<NewsFeedCard> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         CustomText(
-                          text: widget.date,
+                          text: date,
                           fontSize: ScreenUtil().setSp(12),
                           color: Colors.grey,
                         ),
@@ -92,13 +84,13 @@ class _NewsFeedCardState extends State<NewsFeedCard> {
             ),
             SizedBox(height: ScreenUtil().setHeight(5)),
             CustomText(
-              text: widget.postContent,
+              text: postContent,
               fontSize: ScreenUtil().setSp(12),
               color: Colors.black,
             ),
             SizedBox(height: ScreenUtil().setHeight(5)),
-            widget.hasImage == true
-                ? Image.asset(widget.imagePath!) // this for image post
+            hasImage == true
+                ? Image.asset(imagePath!) // this for image post
                 : SizedBox(
                     height: ScreenUtil().setHeight(1),
                   ),
@@ -106,17 +98,10 @@ class _NewsFeedCardState extends State<NewsFeedCard> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 TextButton.icon(
-                  onPressed: () {
-                    setState(() {
-                      isLiked = !isLiked;
-                    });
-                  },
-                  icon: Icon(
-                    isLiked ? Icons.thumb_up : Icons.thumb_up_outlined,
-                    color: FB_DARK_PRIMARY,
-                  ),
+                  onPressed: () {},
+                  icon: const Icon(Icons.thumb_up_outlined, color: FB_DARK_PRIMARY),
                   label: CustomText(
-                    text: isLiked ? 'Liked' : 'Like',
+                    text:'Like',
                     fontSize: ScreenUtil().setSp(12),
                     color: FB_DARK_PRIMARY,
                   ),
@@ -124,7 +109,7 @@ class _NewsFeedCardState extends State<NewsFeedCard> {
 
                 TextButton.icon(
                   onPressed: () {},
-                  icon: const Icon(Icons.comment, color: FB_DARK_PRIMARY),
+                  icon: const Icon(Icons.comment_outlined, color: FB_DARK_PRIMARY),
                   label: CustomText(
                     text: 'Comment',
                     fontSize: ScreenUtil().setSp(12),
