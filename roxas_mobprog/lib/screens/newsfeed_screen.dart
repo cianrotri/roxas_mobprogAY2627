@@ -1,4 +1,5 @@
 import 'package:material_ui/material_ui.dart';
+
 import '../widgets/newsfeed_card.dart';
 
 class NewsFeedScreen extends StatelessWidget {
@@ -8,6 +9,82 @@ class NewsFeedScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: const [
+        NewsFeedCard(
+          avatarPath: 'assets/icons/geto_icon.jpg',
+          userName: '',
+          postContent: '',
+          numOfLikes: 10,
+          hasImage: true,
+          imagePath: 'assets/images/geto_post.jpg',
+          date: 'October 11',
+        ),
+        NewsFeedCard(
+          avatarPath: 'assets/icons/.jpg',
+          userName: '',
+          postContent: '',
+          numOfLikes: 10,
+          date: 'October 11',
+        ),
+        NewsFeedCard(
+          avatarPath: 'assets/icons/.jpg',
+          userName: '',
+          postContent: '',
+          numOfLikes: 10,
+          date: 'October 11',
+        ),
+        NewsFeedCard(
+          avatarPath: 'assets/icons/hinata_icon.jpg',
+          userName: '',
+          postContent: '',
+          numOfLikes: 10,
+          hasImage: true,
+          imagePath: 'assets/images/kagehina1.jpg',
+          date: 'October 11',
+        ),
+        NewsFeedCard(
+          avatarPath: 'assets/icons/.jpg',
+          userName: '',
+          postContent: '',
+          numOfLikes: 10,
+          date: 'October 11',
+        ),
+        NewsFeedCard(
+          avatarPath: 'assets/icons/kenma_icon.png',
+          userName: '',
+          postContent: '',
+          numOfLikes: 10,
+          hasImage: true,
+          imagePath: 'assets/images/val_post.jpg',
+          date: 'October 11',
+        ),
+        NewsFeedCard(
+          avatarPath: 'assets/icons/.jpg',
+          userName: '',
+          postContent: '',
+          numOfLikes: 10,
+          date: 'October 11',
+        ),
+        NewsFeedCard(
+          avatarPath: 'assets/icons/.jpg',
+          userName: '',
+          postContent: '',
+          numOfLikes: 10,
+          date: 'October 11',
+        ),
+        NewsFeedCard(
+          avatarPath: 'assets/icons/.jpg',
+          userName: '',
+          postContent: '',
+          numOfLikes: 10,
+          date: 'October 11',
+        ),
+        NewsFeedCard(
+          avatarPath: 'assets/icons/.jpg',
+          userName: '',
+          postContent: '',
+          numOfLikes: 10,
+          date: 'October 11',
+        ),
         NewsFeedCard(
           avatarPath: 'assets/icons/grace_icon.jpg',
           userName: 'Gello Bee',
@@ -28,4 +105,3 @@ class NewsFeedScreen extends StatelessWidget {
     );
   }
 }
-
