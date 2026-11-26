@@ -27,12 +27,13 @@ class Notification extends StatelessWidget {
           SizedBox(
             width: ScreenUtil().setWidth(10),
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CustomText(
-                text: name,
-                fontSize: ScreenUtil().setSp(20),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CustomText(
+                  text: name,
+                  fontSize: ScreenUtil().setSp(20),
                 color: Colors.black,
                 fontWeight: FontWeight.w800,
               ),
@@ -46,8 +47,11 @@ class Notification extends StatelessWidget {
                 fontSize: ScreenUtil().setSp(12),
                 color: Colors.black,
                 fontStyle: FontStyle.italic,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
             ],
+          ),
           ),
           const Spacer(),
           const Icon(Icons.more_horiz),

@@ -30,12 +30,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 color: FB_PRIMARY,
                 fontFamily: 'Klavika',
               )
-            : const Text(
-                'Notifications',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+            : CustomText(
+                text: 'Notifications',
+                fontSize: ScreenUtil().setSp(25),
+                color: FB_DARK_PRIMARY,
+                fontFamily: 'Klavika',
+              )
       ),
       body: PageView(
         controller: _pageController,
@@ -52,10 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onTap: _onTappedBar,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: 'Notifications',
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.notifications), label: 'Notifications'),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
         ],
         selectedItemColor: FB_PRIMARY,

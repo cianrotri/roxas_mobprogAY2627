@@ -17,8 +17,8 @@ State<NotificationScreen> {
     return Container(
       color: Colors.white,
       width: ScreenUtil().screenWidth,
-      child: const Column(
-        children: [
+      child: ListView(
+        children: const[
           notif.Notification(name: 'Kenma Kozume', post: 'an image',
           description: 'Valorant Break',),
           Divider(),

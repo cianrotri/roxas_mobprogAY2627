@@ -97,13 +97,22 @@ class NewsFeedCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+          
                 TextButton.icon(
                   onPressed: () {},
-                  icon: const Icon(Icons.thumb_up_outlined, color: FB_DARK_PRIMARY),
-                  label: CustomText(
-                    text:'Like',
-                    fontSize: ScreenUtil().setSp(12),
+                  icon: const Icon(
+                    Icons.thumb_up_outlined,
                     color: FB_DARK_PRIMARY,
+                  ),
+                  label: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      CustomText(
+                        text: '$numOfLikes',
+                        fontSize: ScreenUtil().setSp(12),
+                        color: FB_DARK_PRIMARY,
+                      ),
+                    ],
                   ),
                 ),
 

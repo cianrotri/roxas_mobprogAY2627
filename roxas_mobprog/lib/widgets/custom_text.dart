@@ -11,6 +11,8 @@ class CustomText extends StatelessWidget {
     this.textAlign = TextAlign.left,
     this.letterSpacing = 0,
     this.fontStyle = FontStyle.normal,
+    this.maxLines,
+    this.overflow,
   });
 
   final String text;
@@ -20,6 +22,8 @@ class CustomText extends StatelessWidget {
   final TextAlign textAlign;
   final String fontFamily;
   final FontStyle fontStyle;
+  final int? maxLines;
+  final TextOverflow? overflow;
   @override
   Widget build(BuildContext context) {
     return Text(
@@ -33,6 +37,8 @@ class CustomText extends StatelessWidget {
         fontStyle: fontStyle,
         letterSpacing: letterSpacing,
       ),
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
