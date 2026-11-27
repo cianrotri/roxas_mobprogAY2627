@@ -79,7 +79,7 @@ class NewsFeedScreen extends StatelessWidget {
         NewsFeedCard(
           avatarPath: 'assets/icons/hinata_icon.jpg',
           userName: 'Hinata Shoyo',
-          postContent: 'Just had the best meal at the restaurant!',
+          postContent: 'Someone tell Kageyama to STOP BEING MEAN TO ME.',
           numOfLikes: 54,
           hasImage: true,
           imagePath: 'assets/images/kagehina1.jpg',
